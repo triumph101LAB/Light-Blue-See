@@ -1,0 +1,73 @@
+.body1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust as needed */
+    background: linear-gradient(to right, #56ab2f, #a8e063); /* Eco gradient */
+    flex-wrap: wrap; /* Allows icons to stack on smaller screens */
+    padding: 10px; /* Add padding for smaller screens */
+}
+
+.icons2 {
+    text-align: center;
+    background-color: #FFFFFF80;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 42%;
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 210px;
+    margin: 10px; /* Add spacing between icons */
+}
+
+.icons2 img {
+    width: 80px; /* Adjust size for smaller screens */
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: large; /* Reduce size slightly for smaller screens */
+    font-style: italic;
+}
+
+body {
+    background: linear-gradient(to right, #56ab2f, #a8e063); /* Eco gradient */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    .icons2 {
+        width: 90%; /* Make icons take full width on smaller screens */
+        height: auto; /* Adjust height automatically */
+        padding: 15px;
+    }
+
+    .icons2 img {
+        width: 70px; /* Scale down icon size */
+        height: 70px;
+    }
+
+    p {
+        font-size: medium; /* Further adjust text size for smaller screens */
+        font-style: italic;
+    }
+}
+
+@media (max-width: 480px) {
+    .icons2 {
+        width: 100%; /* Full width on very small screens */
+    }
+
+    .icons2 img {
+        width: 60px;
+        height: 60px;
+    }
+
+    p {
+        font-size: small;
+        font-style: italic;
+    }
+}
